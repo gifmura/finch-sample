@@ -10,7 +10,7 @@ This project is intended to be used on Mac OS X or Linux.
 
 And following instructions are only for Mac OS X, sorry.
 
-# Usage
+## Usage
 
 *As with this projects, you must have JDK 1.8 and sbt installed.*
 
@@ -61,9 +61,12 @@ curl http://localhost:8081/users/`id`
 
 # Post a user.
 curl -X POST -d "email=finch-man@example.com" -d "screen_name=finch-man" http://localhost:8081/users
+
+# Post multi users with JSON.
+curl -d '[{"email":"foo@example.com","screen_name":"foo"},{"email":"bar@example.com","screen_name":"bar"}]' -H "Content-Type: application/json" -X POST http://localhost:8081/usersjson
 ```
 
-# References
+## References
 
 * https://blog.dakatsuka.jp/2015/12/07/finch.html (Japanese)
 
