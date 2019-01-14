@@ -54,13 +54,13 @@ Now you can send APIs like below.
 
 ```bash
 # Get user list.
-curl http://localhost:8080/users
+curl http://localhost:8081/users
 
 # Get a user info.
-curl http://localhost:8080/users/`id`
+curl http://localhost:8081/users/`id`
 
 # Post a user.
-curl -X POST -d "email=finch-man@example.com" -d "screen_name=finch-man" http://localhost:8080/users
+curl -X POST -d "email=finch-man@example.com" -d "screen_name=finch-man" http://localhost:8081/users
 ```
 
 # References
