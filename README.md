@@ -66,3 +66,9 @@ curl -X POST -d "email=finch-man@example.com" -d "screen_name=finch-man" http://
 # References
 
 * https://blog.dakatsuka.jp/2015/12/07/finch.html (Japanese)
+
+## Licence
+
+<a href="#finch-sample">Back to top</a>
+
+The MIT License (MIT 2019).
