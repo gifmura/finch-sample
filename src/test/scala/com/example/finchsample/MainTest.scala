@@ -5,14 +5,16 @@ import org.scalatest.FunSuite
 
 class MainTest extends FunSuite {
   test("healthcheck") {
-    assert(Main.healthcheck(Input.get("/")).awaitValueUnsafe() == Some("OK"))
+    assert(Main_bak.healthcheck(Input.get("/")).awaitValueUnsafe() == Some("OK"))
   }
 
   test("helloWorld") {
-    assert(Main.helloWorld(Input.get("/hello")).awaitValueUnsafe() == Some(Main.Message("World")))
+    assert(
+      Main_bak.helloWorld(Input.get("/hello")).awaitValueUnsafe() == Some(
+        Main_bak.Message("World")))
   }
 
   test("hello") {
-    assert(Main.hello(Input.get("/hello/foo")).awaitValueUnsafe() == Some(Main.Message("foo")))
+    assert(Main_bak.hello(Input.get("/hello/foo")).awaitValueUnsafe() == Some(Main_bak.Message("foo")))
   }
 }
